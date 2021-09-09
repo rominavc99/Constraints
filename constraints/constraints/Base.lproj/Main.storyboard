@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="constraints" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="leV-Os-GDs" userLabel="Contenedor Bodega">
+                                <rect key="frame" x="0.0" y="-34" width="375" height="406"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bodega XYZ123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Dj-Ij-bVt" userLabel="EtiquetaNombreBodega">
+                                        <rect key="frame" x="109.33333333333331" y="83" width="157" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="warehouse" translatesAutoresizingMaskIntoConstraints="NO" id="Wch-4i-jME">
+                                        <rect key="frame" x="32" y="142" width="311" height="232"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92240104249999999" green="0.81227173060000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Wch-4i-jME" firstAttribute="top" secondItem="6Dj-Ij-bVt" secondAttribute="bottom" constant="32" id="Ci5-ZO-Mna"/>
+                                    <constraint firstItem="6Dj-Ij-bVt" firstAttribute="centerX" secondItem="leV-Os-GDs" secondAttribute="centerX" id="JgX-1u-Xd1"/>
+                                    <constraint firstItem="Wch-4i-jME" firstAttribute="leading" secondItem="leV-Os-GDs" secondAttribute="leading" constant="32" id="Qmu-Bl-OQA"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wch-4i-jME" secondAttribute="bottom" constant="32" id="kUG-pi-5o1"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wch-4i-jME" secondAttribute="trailing" constant="32" id="y76-vE-E4R"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ze6-jw-7XV" userLabel="Contenedor Temperatura">
+                                <rect key="frame" x="0.0" y="372" width="375" height="406"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24° C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hv-iL-vSI">
+                                        <rect key="frame" x="85.333333333333314" y="128.66666666666669" width="204" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="84"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thermometer" translatesAutoresizingMaskIntoConstraints="NO" id="6Oa-w4-kVW">
+                                        <rect key="frame" x="322" y="13.999999999999996" width="45" height="48.666666666666657"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.82418094959999999" green="0.97583566180000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="6Oa-w4-kVW" firstAttribute="top" secondItem="Ze6-jw-7XV" secondAttribute="top" constant="14" id="8gx-5O-Tq6"/>
+                                    <constraint firstItem="4hv-iL-vSI" firstAttribute="centerY" secondItem="Ze6-jw-7XV" secondAttribute="centerY" constant="-25" id="MGl-Ih-aM8"/>
+                                    <constraint firstItem="4hv-iL-vSI" firstAttribute="centerX" secondItem="Ze6-jw-7XV" secondAttribute="centerX" id="N0l-nh-Fe3"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Oa-w4-kVW" secondAttribute="trailing" constant="8" id="XLN-CK-IvL"/>
+                                    <constraint firstItem="6Oa-w4-kVW" firstAttribute="height" secondItem="Ze6-jw-7XV" secondAttribute="height" multiplier="0.12" id="ctc-Ec-kgC"/>
+                                    <constraint firstItem="6Oa-w4-kVW" firstAttribute="width" secondItem="Ze6-jw-7XV" secondAttribute="width" multiplier="0.12" id="kaM-1y-zBY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ze6-jw-7XV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="77w-eh-0Sf"/>
+                            <constraint firstItem="Ze6-jw-7XV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DeT-6B-fge"/>
+                            <constraint firstItem="Ze6-jw-7XV" firstAttribute="top" secondItem="leV-Os-GDs" secondAttribute="bottom" id="PTl-Ib-ZIE"/>
+                            <constraint firstItem="6Dj-Ij-bVt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="PjV-kP-kUJ"/>
+                            <constraint firstItem="leV-Os-GDs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UHe-Ne-cJl"/>
+                            <constraint firstItem="Ze6-jw-7XV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="beY-hU-eBc"/>
+                            <constraint firstItem="leV-Os-GDs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="glB-4k-GfV"/>
+                            <constraint firstItem="leV-Os-GDs" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="gnX-YJ-0y6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="leV-Os-GDs" secondAttribute="trailing" id="pMU-5h-NAC"/>
+                            <constraint firstItem="Ze6-jw-7XV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="t7S-ex-twP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="116.74876847290641"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="thermometer" width="512" height="512"/>
+        <image name="warehouse" width="512" height="512"/>
+    </resources>
+</document>
